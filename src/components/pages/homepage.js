@@ -11,10 +11,6 @@ export default class extends Component {
 
   render() {
       return (
-<<<<<<< HEAD
-          <div>
-              ...
-=======
           <div className="homepage-container">
             <div className="top-home">
                 <div className="top-left-home">
@@ -71,7 +67,6 @@ export default class extends Component {
                 <div className="bottom-right-home"></div>
             </div>
               
->>>>>>> d5cf700b0c3b5d97269137cfd543c90e33644b0b
           </div>
       )
   }
