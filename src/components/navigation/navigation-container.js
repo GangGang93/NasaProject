@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../../images/nasalogo.png';
+import Logo from '../../images/nasalogo.png';
 
 export default class extends Component {
   constructor(props) {
