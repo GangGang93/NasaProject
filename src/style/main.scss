@@ -1,3 +1,5 @@
+@import "./navbar";
+
 html {
     font-size: 62.5%; // 1rem is 10px
 }
@@ -26,3 +28,5 @@ body {
     display: grid;
     justify-items: center;
 }
+
+@import "./homepage.scss"
