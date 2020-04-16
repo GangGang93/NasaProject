@@ -12,7 +12,7 @@ export default class extends Component {
   render() {
       return (
           <div>
-              ...
+              No Fear Act
           </div>
       )
   }

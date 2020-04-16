@@ -12,7 +12,7 @@ export default class extends Component {
   render() {
       return (
           <div>
-              ...
+              Officer of Inspector General
           </div>
       )
   }
