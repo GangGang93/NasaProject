@@ -1,53 +1,63 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-export default class extends Component {
-  constructor(props) {
-      super(props)
 
-      this.state = {
-          
-      }
-  }
-
-  render() {
-      return (
+export default function() {
+    return (
         <div className="nav-wrapper">
-        <div className="left-side">
+          <div className="nav-bar">
+              <div className="nasa_logo">
+                  Logo was here...
+              </div>
             <div className="nav-link-wrapper">
-                <NavLink exact to="/">Home</NavLink>
-            </div> 
-
+              <NavLink exact to="/" activeClassName="nav-link-active">
+                Homepage
+              </NavLink>
+            </div>
+    
             <div className="nav-link-wrapper">
-                <NavLink to="/missions">About</NavLink>
+              <NavLink to="/missions" activeClassName="nav-link-active">
+                Missions
+              </NavLink>
+            </div>
+    
+            <div className="nav-link-wrapper">
+              <NavLink to="/galleries" activeClassName="nav-link-active">
+                Galleries
+              </NavLink>
+            </div>
+    
+            <div className="nav-link-wrapper">
+              <NavLink to="/nasa_tv" activeClassName="nav-link-active">
+                Nasa Tv
+              </NavLink>
             </div>
 
             <div className="nav-link-wrapper">
-                <NavLink to="/galleries">Galleries</NavLink>
-            </div>   
+              <NavLink to="/follow_nasa" activeClassName="nav-link-active">
+                Follow Nasa
+              </NavLink>
+            </div>
 
             <div className="nav-link-wrapper">
-                <NavLink to="/nasa_tv">Nasa TV</NavLink>
-            </div>        
+              <NavLink to="/downloads" activeClassName="nav-link-active">
+                Downloads
+              </NavLink>
+            </div>
 
             <div className="nav-link-wrapper">
-                <NavLink to="follow_nasa">Follow NASA</NavLink>
-            </div>     
+              <NavLink to="/about" activeClassName="nav-link-active">
+                About
+              </NavLink>
+            </div>
 
             <div className="nav-link-wrapper">
-                <NavLink to="/downloads">Downloads</NavLink>
-            </div>     
-
-            <div className="nav-link-wrapper">
-                <NavLink to="/about">About</NavLink>
-            </div>     
-
-            <div className="nav-link-wrapper">
-                <NavLink to="/nasa_audience">Nasa Audience</NavLink>
-            </div>     
-        </div>     
-
-    </div>
-      )
-  }
-}
+              <NavLink to="/nasa_audiences" activeClassName="nav-link-active">
+                Nasa Audiences
+              </NavLink>
+            </div>
+          </div>
+        </div>
+    );
+};
+    
