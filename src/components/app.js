@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 
 import NavigationContainter from "./navigation/navigation-container";
+import NavigationFooter from "./navigation/navigation-footer";
 import HomePage from "./pages/homepage";
 import Missions from "./pages/missions";
 import Galleries from "./pages/galleries";
@@ -21,9 +22,9 @@ export default class App extends Component {
       <div className='container'>
         <Router>
           <div>
+          <h1>NASA</h1>
+          <h2>National Aeronautics and Space Administration</h2>
             <NavigationContainter />
-            <h1>NASA</h1>
-            <h2>National Aeronautics and Space Administration</h2>
             <Switch>
               <Route exact path="/" component={HomePage} />
               <Route path="/missions" component={Missions} />
@@ -34,6 +35,7 @@ export default class App extends Component {
               <Route path="/about" component={about} />
               <Route path="/nasa_audience" component={nasa_audiences} />
             </Switch>
+            <NavigationFooter />
           </div>
         </Router>
         
