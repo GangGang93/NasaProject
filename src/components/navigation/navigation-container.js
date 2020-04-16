@@ -15,7 +15,9 @@ export default class extends Component {
       return (
         <div className="nav-wrapper">
             <div className="logo">
-                <img src={Logo} />
+                <NavLink exact to="/" activeClassName="active-logo-link">
+                    <img src={Logo} />
+                </NavLink>
             </div>
         <div className="left-side">
             <div className="nav-link-wrapper">
