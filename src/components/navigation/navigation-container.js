@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import Logo from '../../images/nasalogo.png'
 
 export default class extends Component {
   constructor(props) {
@@ -13,38 +14,40 @@ export default class extends Component {
   render() {
       return (
         <div className="nav-wrapper">
-        <div className="left-side">
             <div className="nav-link-wrapper">
-                <NavLink exact to="/">Home</NavLink>
+                <NavLink exact to="/" className="logo">
+                    <img src={Logo} />
+                </NavLink>
             </div> 
 
-            <div className="nav-link-wrapper">
-                <NavLink to="/missions">About</NavLink>
-            </div>
+            <div className="center">
+                <div className="nav-link-wrapper">
+                    <NavLink to="/missions">About</NavLink>
+                </div>
 
-            <div className="nav-link-wrapper">
-                <NavLink to="/galleries">Galleries</NavLink>
-            </div>   
+                <div className="nav-link-wrapper">
+                    <NavLink to="/galleries">Galleries</NavLink>
+                </div>   
 
-            <div className="nav-link-wrapper">
-                <NavLink to="/nasa_tv">Nasa TV</NavLink>
-            </div>        
+                <div className="nav-link-wrapper">
+                    <NavLink to="/nasa_tv">Nasa TV</NavLink>
+                </div>        
 
-            <div className="nav-link-wrapper">
-                <NavLink to="follow_nasa">Follow NASA</NavLink>
-            </div>     
+                <div className="nav-link-wrapper">
+                    <NavLink to="follow_nasa">Follow NASA</NavLink>
+                </div>     
 
-            <div className="nav-link-wrapper">
-                <NavLink to="/downloads">Downloads</NavLink>
-            </div>     
+                <div className="nav-link-wrapper">
+                    <NavLink to="/downloads">Downloads</NavLink>
+                </div>     
 
-            <div className="nav-link-wrapper">
-                <NavLink to="/about">About</NavLink>
-            </div>     
+                <div className="nav-link-wrapper">
+                    <NavLink to="/about">About</NavLink>
+                </div>     
 
-            <div className="nav-link-wrapper">
-                <NavLink to="/nasa_audience">Nasa Audience</NavLink>
-            </div>     
+                <div className="nav-link-wrapper">
+                    <NavLink to="/nasa_audience">Nasa Audience</NavLink>
+                </div>     
         </div>     
 
     </div>

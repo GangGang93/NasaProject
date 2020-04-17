@@ -17,8 +17,6 @@ export default class App extends Component {
       <div className='container'>
         <Router>
           <div>
-            <h1>NASA</h1>
-            <h2>National Aeronautics and Space Administration</h2>
             <NavigationContainter />
             <Switch>
               <Route path="/missions" component={Missions} />
