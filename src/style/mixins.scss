@@ -1,0 +1,22 @@
+@mixin tallBox {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin middleBox {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+@mixin bottomBox {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
