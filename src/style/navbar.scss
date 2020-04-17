@@ -1,39 +1,50 @@
 .nav-wrapper {
-    padding: 18px;
+    padding: 28px;
     text-transform: uppercase;
     background-image: url(../images/planetSun.jpg);
     background-position: top;
+    
 
     a {
         text-decoration: none;
         color: grey;
         transition: 0.5s ease-in-out;
+        font-family: 'Ailerons';
+
+
 
         
-
         &:hover {
             cursor: pointer;
             color: red;
             letter-spacing: 0.2rem;
             transition: 0.5s ease-in-out;
+            border: solid 1.9px grey;
+            transition: 0.5s ease-in-out;
         }
     }
 
+
     .logo {
         img {
-            height: 56px;
-            width: 16%;
+            height: 32px;
+            width: 10%;
+    }
+        &:hover {
+            border: transparent;
     }
 }
-    .left-side {
+
+    .center {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 6em;
-        
+        padding-top: 22px;
+
+
     }
 
     .nav-link-wrapper {
-        font-size: 20px;
+        font-size: 22px;
         border-bottom: transparent;
         
     }
