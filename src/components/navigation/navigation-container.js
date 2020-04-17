@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -61,7 +60,7 @@ export default class NavigationContainter extends Component {
                             <input id="filter" type="text" placeholder="Search" />
                             <FontAwesomeIcon icon="search" />
                         </a>
-                </div>    
+                    </div>    
         </div>     
 
     </div>
