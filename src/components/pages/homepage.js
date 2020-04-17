@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-export default class extends Component {
+export default class Homepage extends Component {
   constructor(props) {
       super(props)
 
@@ -52,12 +52,11 @@ export default class extends Component {
             </div>
 
             <div className="middle-home">
-                <div className="middle-left-home">
-                    <img src={require('../../images/voyager.png')} />
-                </div>
-
                 <div className="middle-center-home">
                     <img src={require('../../images/ISSLady.jpg')} />
+                </div>
+                <div className="middle-left-home">
+                    <img src={require('../../images/voyager.png')} />
                 </div>
 
                 <div className="middle-right-home">
