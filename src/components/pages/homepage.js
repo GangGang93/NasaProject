@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import Typist from 'react-typist';
 
 
-export default class extends Component {
+export default class Homepage extends Component {
   constructor(props) {
       super(props)
 
@@ -12,6 +13,7 @@ export default class extends Component {
 
   render() {
       return (
+        <div className="background">
           <div className="homepage-container">
 
             <div className="top-home">
@@ -21,19 +23,25 @@ export default class extends Component {
 
                 <div className="top-center-home tallBox">
                     <div className="top-text">
-                        Today's schedule of NASA at Home activities (all times EDT):
-
-                        10 a.m. - Daily NASA TV programming, including "NASA X  - Future Forward"" and "Astrobiology in the Field"
-                        12 p.m. - Earth Science video demonstration and activity about land cover mapping
-                        2 p.m. – Apollo 13 50th Anniversary – Apollo 13: Home Safe 
-                        2 p.m. - NASA’s Hubble Space Telescope Documentary
-                        4 p.m. - Repeat of 10 a.m. NASA TV programming
-                        4 p.m. - Astronaut Christina Koch reads the children's book "Runaway Bunny" on Instagram Live
-                        7 p.m. - On NASA TV, Apollo 13: Houston, We’ve Had a Problem 
-
-                        Full NASA TV schedule
+                    <Typist>
+                        <p> Welcome to NASA </p>
+                        <Typist.Delay ms={500} />
+                        <br />
+                        ALIENS EXIST!
+                        <Typist.Backspace count={13} delay={200} />
+                        Ignore that...
+                        <br />
+                        <Typist.Delay ms={500} />
+                        Discover more about the universe that you are a part of!
+                        <br />
+                        Dive deep! Immerse yourself with dazziling new information,
+                        <br />
+                        <Typist.Delay ms={500} />
+                        be careful not to get to close to any black holes!
+                        </Typist>
                     </div>
                 </div>
+            </div>
 
                 <div className="top-right-home tallBox">
                     <div className="top-rights-home">

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import NavigationContainter from "./navigation/navigation-container";
 import NavigationFooter from "./navigation/navigation-footer";
+import Homepage from "./pages/homepage";
 import Missions from "./pages/missions";
 import Galleries from "./pages/galleries";
 import NasaTV from "./pages/nasa_tv";
@@ -25,6 +26,7 @@ export default class App extends Component {
           <div>
             <NavigationContainter />
             <Switch>
+              <Route exact to="/" component={Homepage} />
               <Route path="/missions" component={Missions} />
               <Route path="/galleries" component={Galleries} />
               <Route path="/nasa_tv" component={NasaTV} />
