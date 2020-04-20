@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
 
 import NavigationContainter from "./navigation/navigation-container";
 import NavigationFooter from "./navigation/navigation-footer";
@@ -10,9 +14,6 @@ import follow_nasa from './pages/follow_nasa';
 import downloads from './pages/downloads';
 import about from './pages/about';
 import nasa_audiences from './pages/nasa_audiences';
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 library.add( faSearch );
 
