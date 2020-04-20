@@ -1,7 +1,12 @@
+
 .background {
     
     width: 100vw;
     height: 100vw;
+    background-image: url('../images/parallaxBG.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
 
 .homepage-container {
@@ -13,8 +18,7 @@
     margin: 10px;
     background-color: transparent;
     margin-top: -10px;
-
-    // background-attachment: fixed;
+    column-gap: 10px;
     padding-top: 30px;
 
 
@@ -50,6 +54,10 @@
             .top-text {
                 max-height: inherit;
                 max-width: 200px;
+                color: white;
+                font-size: 1.5em;
+                background-color: rgba(80, 86, 111, 0.721);
+                border-radius: 5px;
             }
             
             
