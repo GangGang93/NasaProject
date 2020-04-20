@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Parallax } from 'react-scroll-parallax';
+import parallax from '../../images/parallaxBG.jpg';
+
 
 
 export default class Homepage extends Component {
@@ -8,12 +11,23 @@ export default class Homepage extends Component {
       this.state = {
           
       }
+
+
   }
+  
 
   render() {
-      return (
-          <div className="homepage-container">
+    // const ParallaxImage = () => (
+    //     <Parallax className="custom-class" y={[0, 0]} tagOuter="figure">
+    //         <Image src="../../images/parallaxBG.jpg" />
+    //     </Parallax>
+    // );
 
+      return (
+          <div className="background" style={{ backgroundImage:`url(${parallax})`}}>
+          <div className="homepage-container">
+          
+            
             <div className="top-home">
                 <div className="top-left-home tallBox">
                     <img src={require('../../images/spaceFace.jpg')} />
@@ -83,6 +97,7 @@ export default class Homepage extends Component {
                 </div>
             </div>
               
+          </div>
           </div>
       )
   }
