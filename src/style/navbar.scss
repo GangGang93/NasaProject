@@ -21,19 +21,12 @@
             transition: 0.5s ease-in-out;
             border: solid 1.9px grey;
             transition: 0.5s ease-in-out;
+            border-radius: 0.8rem;
+
         }
     }
 
 
-    .logo {
-        img {
-            height: 32px;
-            width: 10%;
-    }
-        &:hover {
-            border: transparent;
-    }
-}
 
     .center {
         display: flex;
@@ -43,7 +36,24 @@
 
     }
 
+<<<<<<< HEAD
     .nav-link-wrapper, h1 {
+=======
+    .logo {
+        img {
+            height: 32px;
+            width: 120px;
+            border-radius: 0.8rem;
+    }
+    a {
+        &:hover {
+            border: none;
+        }
+    }
+}
+
+    .nav-link-wrapper {
+>>>>>>> f417ac51464f1bf128828c73b34ed52bb158531d
         font-size: 22px;
         border-bottom: transparent;
         
@@ -53,5 +63,27 @@
         color: red;
         letter-spacing: 0.2rem;
         transition: 0.7s ease-in-out;
+    }
+
+    .search-bar {
+        text-decoration: none;
+        a {
+            #filter {
+                background-color: transparent;
+                outline: none;
+                color: red;
+                font-family: 'Ailerons';
+                height: 24px;
+                border-radius: 1.5rem;
+            }
+
+            i {
+                font-size: 20px;
+            }
+
+            &:hover {
+                border: none;
+            }
+        }
     }
 }
