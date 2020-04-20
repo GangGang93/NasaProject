@@ -4,9 +4,9 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-
 import NavigationContainter from "./navigation/navigation-container";
 import NavigationFooter from "./navigation/navigation-footer";
+import Homepage from "./pages/homepage";
 import Missions from "./pages/missions";
 import Galleries from "./pages/galleries";
 import NasaTV from "./pages/nasa_tv";
@@ -15,7 +15,8 @@ import downloads from './pages/downloads';
 import about from './pages/about';
 import nasa_audiences from './pages/nasa_audiences';
 
-library.add( faSearch );
+
+library.add(faSearch);
 
 
 export default class App extends Component {
@@ -26,6 +27,7 @@ export default class App extends Component {
           <div>
             <NavigationContainter />
             <Switch>
+              <Route exact to="/" component={Homepage} />
               <Route path="/missions" component={Missions} />
               <Route path="/galleries" component={Galleries} />
               <Route path="/nasa_tv" component={NasaTV} />

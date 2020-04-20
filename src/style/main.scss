@@ -29,5 +29,5 @@ body {
     display: grid;
     justify-items: center;
 }
-
-@import "./homepage.scss"
+@import "./mixins.scss";
+@import "./homepage.scss";

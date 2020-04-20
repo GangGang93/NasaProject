@@ -1,57 +1,70 @@
 .homepage-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     margin: 10px;
+
 
     .top-home {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        height: 300px;
+        
+
+
+        
         .top-left-home {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include tallBox();
             
 
             img {
-                width: 60%;
-                height: 300px;
+                max-height: 100%;
+                width: 100%;
+                object-fit: cover;
+                
+                
             }
             
             
 
         }
         .top-center-home {
-            display: flex;
-            justify-items: center;
-            align-content: center;
-            width: 250px;
+            @include tallBox();
+            
+
+            .top-text {
+                max-height: inherit;
+                max-width: 200px;
+            }
             
             
             
             
         }
         .top-right-home {
-            display: grid;
-            grid-template-rows: 1fr 1.25fr;
-            height: 200px;
+            @include tallBox();
+            flex-direction: column;
+            max-height: max-content;
+            max-width: max-content;
+            
             
 
             .top-rights-home {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                justify-content: center;
-                align-items: center;
-                
                 
                 
                 
             
                 .sub1-top-right-home{
                     display: flex;
+
                     img {
+                        
+                        max-height: 100%;
                         width: 100%;
-                        height: 100%;
                     }
                     
                     
@@ -59,20 +72,104 @@
                 }
                 .sub2-top-right-home{
                     display: flex;
+
                     img {
+                        height: 150px;
                         width: 100%;
-                        height: 185px;
                     }
                 }                
             }
 
             .sub3-top-right-home{
                 display: flex;
+
                 img{
                     display: flex;
                     width: 100%;
-                    height: 50%;
+                    height: 150px;
                 }
+            }
+        }
+    }
+
+    .middle-home {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 200px;    
+        padding-top: 49px;    
+
+
+        .middle-left-home {
+            @include middleBox();
+            img {
+                max-height: 100%;
+                max-width: 100%;
+                padding-bottom: 50px;
+            }
+        }
+
+        .middle-center-home {
+            @include middleBox();
+            
+            img {
+                max-height: inherit;
+                max-width: inherit;
+            }
+        }
+
+        .middle-right-home {
+            @include middleBox();
+            img {
+                max-height: inherit;
+                max-width: inherit;
+            }
+        }
+    }
+
+    .bottom-home {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        height: 250px;
+        padding-top: 51px;
+        
+
+        .bottom-left-home {
+            @include bottomBox();
+            
+            img{
+                max-height: 250px;
+                max-width: 100%;
+            }
+        }
+
+        .bottom-centers-home {
+            @include bottomBox();
+            flex-direction: column;
+            max-height: 100%;
+            max-width: 100%;
+            
+            .bottom-center1-home {
+                img {
+                max-height: 125px;
+                max-width: 100%;
+                
+                }
+            }
+
+            .bottom-center2-home {
+                img {
+                max-height: 125px;
+                max-width: 100%;
+                }
+            }
+        }
+
+        .bottom-right-home {
+            @include bottomBox();
+            img {
+            max-height: 100%;
+            max-width: 100%;
             }
         }
     }
