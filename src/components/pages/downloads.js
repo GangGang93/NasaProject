@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 
-export default class extends Component {
+import DownloadsNavbar from "../navbars/downloads-navbar";
+
+
+export default class Downloads extends Component {
   constructor(props) {
       super(props)
 
@@ -12,7 +15,7 @@ export default class extends Component {
   render() {
       return (
           <div>
-              ...
+              <DownloadsNavbar/>
           </div>
       )
   }

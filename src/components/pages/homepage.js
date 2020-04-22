@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Typist from 'react-typist';
+//import Typist from 'react-typist';
 
 
 export default class Homepage extends Component {
@@ -22,7 +22,7 @@ export default class Homepage extends Component {
                 </div>
 
                 <div className="top-center-home tallBox">
-                    <div className="top-text">
+                    {/* <div className="top-text">
                     <Typist>
                         <p> Welcome to NASA </p>
                         <Typist.Delay ms={500} />
@@ -39,7 +39,7 @@ export default class Homepage extends Component {
                         <Typist.Delay ms={500} />
                         be careful not to get to close to any black holes!
                         </Typist>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

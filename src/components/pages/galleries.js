@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import GalleriesNavbar from "../navbars/galleries-navbar";
+
 export default class Galleries extends Component {
   constructor(props) {
       super(props)
@@ -12,7 +14,7 @@ export default class Galleries extends Component {
   render() {
       return (
           <div>
-              ...
+              <GalleriesNavbar/>
           </div>
       )
   }

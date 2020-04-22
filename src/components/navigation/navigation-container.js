@@ -24,8 +24,8 @@ export default class NavigationContainer extends Component {
 
                 <div className="center">
                     <div className="nav-link-wrapper" >
-                    <a href="https://www.nasa.gov/missions" activeClassName="nav-link-active">
-                            <h1>Missions</h1>
+                        <a href="https://www.nasa.gov/missions" activeClassName="nav-link-active">
+                                <h1>Missions</h1>
                         </a>
                     </div>
 
