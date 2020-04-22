@@ -1,3 +1,4 @@
+@import "./mixins.scss";
 @import "./navbar";
 
 
@@ -29,5 +30,5 @@ body {
     display: grid;
     justify-items: center;
 }
-@import "./mixins.scss";
+
 @import "./homepage.scss";

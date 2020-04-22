@@ -1,12 +1,14 @@
+  
 @mixin tallBox {
     height: 300px;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 @mixin middleBox {
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,4 +21,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+@mixin maxImg {
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
 }
