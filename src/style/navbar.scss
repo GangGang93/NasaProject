@@ -3,28 +3,27 @@
     text-transform: uppercase;
     background-image: url(../images/planetSun.jpg);
     background-position: top;
+    font-family: 'Ailerons';
+
     
 
-    a {
-        text-decoration: none;
-        color: grey;
-        transition: 0.5s ease-in-out;
-        font-family: 'Ailerons';
-
-
+    // a {
+    //     text-decoration: none;
+    //     color: grey;
+    //     transition: 0.5s ease-in-out;
+    //     font-family: 'Ailerons';
 
         
-        &:hover {
-            cursor: pointer;
-            color: red;
-            letter-spacing: 0.2rem;
-            transition: 0.5s ease-in-out;
-            border: solid 1.9px grey;
-            transition: 0.5s ease-in-out;
-            border-radius: 0.8rem;
-
-        }
-    }
+    //     &:hover {
+    //         cursor: pointer;
+    //         color: red;
+    //         letter-spacing: 0.2rem;
+    //         transition: 0.5s ease-in-out;
+    //         border: solid 1.9px grey;
+    //         transition: 0.5s ease-in-out;
+    //         border-radius: 0.8rem;
+    //     }
+    // }
 
 
 
@@ -33,14 +32,16 @@
         justify-content: space-between;
         padding-top: 22px;
 
-
     }
 
     .logo {
+        padding-top: 21px;
+
         img {
-            height: 32px;
+            height: 37px;
             width: 120px;
             border-radius: 0.8rem;
+
     }
     a {
         &:hover {
@@ -50,9 +51,14 @@
 }
 
     .nav-link-wrapper {
-        font-size: 22px;
+        font-size: 32px;
         border-bottom: transparent;
-        
+
+    }
+
+    h1 {
+        font-family: 'Ailerons';
+        font-size: 32px
     }
 
     .active-nav-link {
@@ -63,18 +69,16 @@
 
     .search-bar {
         text-decoration: none;
+        padding-top: 28px;
+
         a {
             #filter {
                 background-color: transparent;
                 outline: none;
                 color: red;
                 font-family: 'Ailerons';
-                height: 24px;
+                height: 34px;
                 border-radius: 1.5rem;
-            }
-
-            i {
-                font-size: 20px;
             }
 
             &:hover {
