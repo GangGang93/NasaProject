@@ -93,6 +93,7 @@ export default class Homepage extends Component {
                     <img src={require('../../images/voyagerFloat.jpg')} />
                 </div>
             </div>
+            
           </div>
         </div>
       )
